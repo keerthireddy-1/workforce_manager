@@ -1,0 +1,65 @@
+employee_id,name,department,role,experience_years,seniority,location,weekly_capacity_hours,current_allocation_pct,available_hours_per_week,availability_status,available_from
+E001,Aarav Nair,Infrastructure,DevOps Engineer,9.4,Lead,Pune,40,75,10,Partially Available,2026-10-15
+E002,Divya Iyer,Engineering,Frontend Developer,4.1,Mid,Chennai,40,65,14,Partially Available,2026-10-15
+E003,Deepak Naik,Design,UI/UX Designer,8.9,Senior,Chennai,40,70,12,Partially Available,2026-10-15
+E004,Rahul Kulkarni,Engineering,Mobile Developer,4.3,Mid,Chennai,40,75,10,Partially Available,2026-10-15
+E005,Anjali Das,Engineering,Backend Developer,1.7,Junior,Chennai,40,90,4,Fully Allocated,2027-02-15
+E006,Rohan Menon,Delivery,Project Manager,13.7,Lead,Hyderabad,40,85,6,Partially Available,2026-10-15
+E007,Karthik Naik,Engineering,Backend Developer,4.3,Mid,Bengaluru,40,95,2,Fully Allocated,2026-12-20
+E008,Manoj Kulkarni,Engineering,Frontend Developer,10.2,Lead,Pune,40,80,8,Partially Available,2026-10-15
+E009,Sanjay Gowda,Infrastructure,Cloud Engineer,1.8,Junior,Hyderabad,40,50,20,Partially Available,2026-10-15
+E010,Deepak Pillai,Quality,QA Engineer,10.5,Lead,Chennai,40,15,34,Available,2026-10-15
+E011,Aarav Menon,Engineering,Mobile Developer,12.1,Lead,Remote,40,40,24,Available,2026-10-15
+E012,Divya Joshi,Engineering,Backend Developer,3.0,Mid,Pune,40,75,10,Partially Available,2026-10-15
+E013,Vikram Sharma,Design,UI/UX Designer,5.9,Senior,Hyderabad,40,45,22,Available,2026-10-15
+E014,Priya Kumar,Data & AI,Data Scientist,6.4,Senior,Remote,40,60,16,Partially Available,2026-10-15
+E015,Kavya Reddy,Quality,QA Engineer,1.8,Junior,Hyderabad,40,70,12,Partially Available,2026-10-15
+E016,Sahana Das,Infrastructure,Cloud Engineer,4.2,Mid,Bengaluru,40,45,22,Available,2026-10-15
+E017,Kavya Pillai,Infrastructure,Cloud Engineer,8.9,Senior,Pune,40,45,22,Available,2026-10-15
+E018,Tanvi Kulkarni,Quality,QA Engineer,8.6,Senior,Chennai,40,95,2,Fully Allocated,2027-01-10
+E019,Aditya Pillai,Data & AI,ML Engineer,6.6,Senior,Pune,40,50,20,Partially Available,2026-10-15
+E020,Neha Hegde,Data & AI,Data Analyst,7.2,Senior,Pune,40,120,0,Overloaded,2027-01-15
+E021,Sanjay Reddy,Data & AI,Data Scientist,8.2,Senior,Hyderabad,40,15,34,Available,2026-10-15
+E022,Aditya Rao,Data & AI,ML Engineer,12.3,Lead,Bengaluru,40,15,34,Available,2026-10-15
+E023,Harish Shetty,Data & AI,Data Analyst,12.7,Lead,Remote,40,20,32,Available,2026-10-15
+E024,Neha Chopra,Data & AI,Data Analyst,4.7,Mid,Chennai,40,115,0,Overloaded,2027-01-15
+E025,Lakshmi Menon,Engineering,Backend Developer,5.5,Senior,Pune,40,25,30,Available,2026-10-15
+E026,Tanvi Pillai,Engineering,Backend Developer,0.9,Junior,Pune,40,75,10,Partially Available,2026-10-15
+E027,Ishita Kumar,Data & AI,Data Engineer,7.8,Senior,Hyderabad,40,15,34,Available,2026-10-15
+E028,Priya Joshi,Design,UI/UX Designer,5.6,Senior,Remote,40,75,10,Partially Available,2026-10-15
+E029,Varun Singh,Data & AI,Data Engineer,6.3,Senior,Pune,40,45,22,Available,2026-10-15
+E030,Revathi Reddy,Engineering,Full Stack Developer,8.1,Senior,Chennai,40,125,0,Overloaded,2027-03-15
+E031,Nikhil Chopra,Data & AI,Data Analyst,7.6,Senior,Pune,40,95,2,Fully Allocated,2027-01-10
+E032,Vivaan Rao,Engineering,Backend Developer,6.4,Senior,Bengaluru,40,95,2,Fully Allocated,2027-02-28
+E033,Rohan Rao,Data & AI,Data Analyst,6.6,Senior,Bengaluru,40,20,32,Available,2026-10-15
+E034,Suresh Iyer,Engineering,Backend Developer,11.0,Lead,Remote,40,15,34,Available,2026-10-15
+E035,Sahana Reddy,Engineering,Full Stack Developer,1.5,Junior,Bengaluru,40,45,22,Available,2026-10-15
+E036,Tanvi Bhat,Engineering,Full Stack Developer,7.3,Senior,Chennai,40,60,16,Partially Available,2026-10-15
+E037,Sneha Pillai,Engineering,Frontend Developer,5.6,Senior,Bengaluru,40,40,24,Available,2026-10-15
+E038,Harish Nair,Data & AI,Data Engineer,9.0,Lead,Remote,40,95,2,Fully Allocated,2027-01-10
+E039,Rohan Iyer,Quality,QA Engineer,12.5,Lead,Pune,40,45,22,Available,2026-10-15
+E040,Karthik Joshi,Data & AI,Data Scientist,7.2,Senior,Chennai,40,110,0,Overloaded,2026-12-20
+E041,Divya Naik,Data & AI,Data Analyst,8.7,Senior,Chennai,40,65,14,Partially Available,2026-10-15
+E042,Pooja Menon,Infrastructure,Cloud Engineer,12.5,Lead,Hyderabad,40,90,4,Fully Allocated,2026-12-20
+E043,Varun Das,Data & AI,Data Scientist,11.7,Lead,Remote,40,110,0,Overloaded,2026-12-20
+E044,Aarav Kulkarni,Data & AI,Data Analyst,9.2,Lead,Pune,40,140,0,Overloaded,2026-12-20
+E045,Pooja Rao,Engineering,Full Stack Developer,12.4,Lead,Chennai,40,50,20,Partially Available,2026-10-15
+E046,Divya Menon,Infrastructure,Cloud Engineer,10.8,Lead,Pune,40,95,2,Fully Allocated,2027-01-10
+E047,Pooja Iyer,Infrastructure,DevOps Engineer,8.4,Senior,Bengaluru,40,55,18,Partially Available,2026-10-15
+E048,Manoj Menon,Delivery,Project Manager,6.7,Senior,Remote,40,80,8,Partially Available,2026-10-15
+E049,Sneha Joshi,Engineering,Full Stack Developer,4.4,Mid,Pune,40,10,36,Available,2026-10-15
+E050,Varun Patel,Data & AI,Data Scientist,6.0,Senior,Chennai,40,130,0,Overloaded,2026-12-20
+E051,Kavya Rao,Data & AI,Data Engineer,13.9,Lead,Remote,40,50,20,Partially Available,2026-10-15
+E052,Aditya Kumar,Data & AI,ML Engineer,4.0,Mid,Pune,40,15,34,Available,2026-10-15
+E053,Rahul Hegde,Engineering,Full Stack Developer,8.2,Senior,Hyderabad,40,80,8,Partially Available,2026-10-15
+E054,Lakshmi Patel,Engineering,Frontend Developer,10.8,Lead,Chennai,40,70,12,Partially Available,2026-10-15
+E055,Rohan Kumar,Data & AI,Data Engineer,9.6,Lead,Remote,40,75,10,Partially Available,2026-10-15
+E056,Sanjay Rao,Data & AI,Data Scientist,9.0,Lead,Chennai,40,115,0,Overloaded,2026-12-20
+E057,Arjun Nair,Infrastructure,Cloud Engineer,7.0,Senior,Pune,40,70,12,Partially Available,2026-10-15
+E058,Rahul Rao,Engineering,Mobile Developer,4.5,Mid,Hyderabad,40,90,4,Fully Allocated,2026-12-20
+E059,Anjali Joshi,Delivery,Project Manager,1.4,Junior,Hyderabad,40,50,20,Partially Available,2026-10-15
+E060,Ananya Menon,Infrastructure,DevOps Engineer,1.6,Junior,Chennai,40,50,20,Partially Available,2026-10-15
+E061,Swathi Iyer,Data & AI,ML Engineer,8.2,Senior,Chennai,40,90,4,Fully Allocated,2027-02-28
+E062,Aditya Kulkarni,Infrastructure,DevOps Engineer,4.1,Mid,Chennai,40,90,4,Fully Allocated,2026-12-20
+E063,Sanjay Das,Delivery,Project Manager,11.1,Lead,Pune,40,70,12,Partially Available,2026-10-15
+E064,Deepak Kulkarni,Engineering,Frontend Developer,4.9,Mid,Pune,40,70,12,Partially Available,2026-10-15

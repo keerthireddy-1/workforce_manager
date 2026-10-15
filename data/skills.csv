@@ -1,0 +1,31 @@
+skill_id,skill_name,category
+S001,Python,Programming
+S002,Java,Programming
+S003,JavaScript,Programming
+S004,React,Frontend
+S005,Node.js,Backend
+S006,Flutter,Mobile
+S007,SQL,Data
+S008,Data Analytics,Data
+S009,Statistics,Data
+S010,Power BI,Data
+S011,Tableau,Data
+S012,Spark,Data
+S013,Data Engineering,Data
+S014,Machine Learning,AI/ML
+S015,Deep Learning,AI/ML
+S016,NLP,AI/ML
+S017,Cloud Computing,Cloud
+S018,AWS,Cloud
+S019,Azure,Cloud
+S020,GCP,Cloud
+S021,Docker,DevOps
+S022,Kubernetes,DevOps
+S023,DevOps,DevOps
+S024,Cybersecurity,Security
+S025,Testing/QA,Quality
+S026,UI/UX Design,Design
+S027,Project Management,Management
+S028,Agile/Scrum,Management
+S029,Communication,Soft Skill
+S030,Leadership,Soft Skill

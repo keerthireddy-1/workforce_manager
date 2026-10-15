@@ -1,0 +1,54 @@
+project_id,skill_id,skill_name,min_proficiency,headcount_needed,importance_1to5,hours_per_week
+P001,S001,Python,4,2,5,10
+P001,S017,Cloud Computing,3,1,5,8
+P001,S008,Data Analytics,4,2,5,10
+P001,S007,SQL,3,1,3,6
+P001,S022,Kubernetes,3,1,2,6
+P001,S027,Project Management,3,1,3,5
+P002,S014,Machine Learning,4,2,5,12
+P002,S001,Python,4,2,5,12
+P002,S024,Cybersecurity,3,1,4,8
+P002,S012,Spark,3,1,3,8
+P002,S007,SQL,3,1,3,6
+P003,S017,Cloud Computing,4,2,5,12
+P003,S018,AWS,3,2,5,10
+P003,S021,Docker,3,1,4,8
+P003,S022,Kubernetes,3,1,4,8
+P003,S023,DevOps,3,1,3,8
+P004,S004,React,3,2,4,12
+P004,S003,JavaScript,3,2,4,12
+P004,S026,UI/UX Design,3,1,4,8
+P004,S005,Node.js,3,1,3,10
+P004,S025,Testing/QA,3,1,3,8
+P005,S010,Power BI,3,1,4,10
+P005,S008,Data Analytics,3,2,4,12
+P005,S007,SQL,3,1,4,10
+P005,S011,Tableau,2,1,2,6
+P006,S006,Flutter,3,2,5,14
+P006,S002,Java,3,1,4,10
+P006,S026,UI/UX Design,3,1,3,8
+P006,S025,Testing/QA,3,1,3,8
+P006,S024,Cybersecurity,3,1,3,5
+P007,S016,NLP,3,1,5,12
+P007,S001,Python,3,1,4,10
+P007,S014,Machine Learning,3,1,3,8
+P008,S023,DevOps,4,1,5,12
+P008,S021,Docker,3,1,4,8
+P008,S024,Cybersecurity,4,1,5,10
+P008,S022,Kubernetes,3,1,3,8
+P009,S013,Data Engineering,4,2,5,12
+P009,S012,Spark,4,1,5,10
+P009,S001,Python,3,2,4,10
+P009,S018,AWS,3,1,3,8
+P009,S007,SQL,3,1,3,8
+P010,S014,Machine Learning,4,2,5,12
+P010,S001,Python,4,2,5,12
+P010,S015,Deep Learning,3,1,3,8
+P010,S017,Cloud Computing,3,1,3,8
+P011,S002,Java,3,2,4,12
+P011,S007,SQL,3,1,3,8
+P011,S005,Node.js,3,1,3,8
+P011,S028,Agile/Scrum,3,1,3,5
+P012,S002,Java,3,2,4,12
+P012,S007,SQL,3,1,3,10
+P012,S025,Testing/QA,3,1,3,8

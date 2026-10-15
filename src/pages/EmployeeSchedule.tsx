@@ -6,9 +6,17 @@ import { Clock, Calendar, AlertCircle, Box, Zap, MapPin, X, Send, UserCircle, Um
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../lib/utils';
 import { INDIAN_HOLIDAYS, getDayInfo } from '../constants';
+import EmployeeInsights from '../components/EmployeeInsights';
 
 export function EmployeeSchedule() {
   const { user } = useAuth();
+
+  // The saved profile has extra fields that the shared User type does not list yet.
+  // Reading them through this typed alias removes the red "does not exist on type 'User'" errors.
+  const profile = user as
+    | (User & { domain?: string; isBeginner?: boolean; skills?: string[]; employeeKey?: string })
+    | null;
+
   const [assignments, setAssignments] = useState<Assignment[]>([]);
   const [templates, setTemplates] = useState<ShiftTemplate[]>([]);
   const [colleagues, setColleagues] = useState<User[]>([]);
@@ -91,26 +99,26 @@ export function EmployeeSchedule() {
         </div>
       </header>
 
-      {user?.domain && (
+      {profile?.domain && (
         <div className="glass-morphism rounded-3xl p-6 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-black">
-              {user.domain.slice(0, 2).toUpperCase()}
+              {profile.domain.slice(0, 2).toUpperCase()}
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Specialization Domain:</span>
                 <span className="px-2.5 py-0.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-md text-[9px] font-black uppercase tracking-wider">
-                  {user.domain}
+                  {profile.domain}
                 </span>
               </div>
               <div className="flex flex-wrap items-center gap-1.5 mt-2">
-                {user.isBeginner ? (
+                {profile.isBeginner ? (
                   <span className="text-[9px] font-mono text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-lg">
                     Beginner Trainee
                   </span>
-                ) : user.skills && user.skills.length > 0 ? (
-                  user.skills.map((skill: string) => (
+                ) : profile.skills && profile.skills.length > 0 ? (
+                  profile.skills.map((skill: string) => (
                     <span key={skill} className="px-2 py-0.5 bg-white/5 border border-white/10 text-slate-300 rounded-lg text-[8px] font-mono uppercase">
                       {skill}
                     </span>
@@ -121,10 +129,15 @@ export function EmployeeSchedule() {
           </div>
           <div className="text-left sm:text-right sm:border-l sm:border-white/5 sm:pl-6">
             <span className="text-[9px] font-mono text-slate-500 uppercase tracking-widest block">Allocated Dept</span>
-            <span className="text-xs font-black text-white uppercase tracking-wider">{user.department}</span>
+            <span className="text-xs font-black text-white uppercase tracking-wider">{user?.department}</span>
           </div>
         </div>
       )}
+
+      {/* Insights dashboard: skills, project matches, workload, training.
+          Uses the logged-in employee's key (EMP002 -> dataset employee E002).
+          Move this block anywhere in the page if you want it somewhere else. */}
+      <EmployeeInsights employeeId={profile?.employeeKey} />
 
       <div className="grid gap-6">
         {days.map(day => {

@@ -4,6 +4,7 @@ import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
 import bcrypt from "bcryptjs";
 import { DBSQLClient } from "@databricks/sql";
+import { insightsRouter } from "./server/insightsRoutes";
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use("/api/insights", insightsRouter);
 
 // In-memory "Database"
 let users = [
