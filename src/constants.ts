@@ -21,3 +21,9 @@ export const getDayInfo = (date: Date) => {
 };
 
 export const isNonWorkingDay = (date: Date) => getDayInfo(date).isNonWorking;
+export const PROJECT_STATUSES = [
+  { value: 'planning', label: 'Planning' },
+  { value: 'active', label: 'Active' },
+  { value: 'on_hold', label: 'On Hold' },
+  { value: 'completed', label: 'Completed' },
+] as const;

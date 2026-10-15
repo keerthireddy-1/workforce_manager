@@ -1,3 +1,4 @@
+import ProjectsPanel from '../components/ProjectsPanel';
 import React, { useState, useEffect } from 'react';
 import { 
   format, 
@@ -127,7 +128,7 @@ export function Roster() {
     <motion.div 
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="max-w-full h-full flex flex-col gap-8 perspective-container"
+      className="max-w-full min-h-full flex flex-col gap-8 perspective-container"
     >
       <header className="flex items-end justify-between px-2">
         <div className="flex items-center gap-6">
@@ -177,7 +178,7 @@ export function Roster() {
         </div>
       </header>
 
-      <div className="flex-1 min-h-0 glass-morphism rounded-[2.5rem] overflow-hidden flex flex-col shadow-inner">
+      <div className="min-h-[600px] glass-morphism rounded-[2.5rem] overflow-hidden flex flex-col shadow-inner">
         <div className="p-6 border-b border-white/5 bg-white/5 flex justify-between items-center">
           <div className="flex items-center gap-3">
              <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" />
@@ -325,6 +326,9 @@ export function Roster() {
           </table>
         </div>
       </div>
+
+      <ProjectsPanel />
+
       <ManualAssignModal 
         isOpen={isManualModalOpen}
         onClose={() => {

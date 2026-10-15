@@ -94,3 +94,19 @@ export interface SkillGapAnalysisResult {
   status: 'staged_for_ml' | 'completed';
   message: string;
 }
+export type ProjectStatus = 'planning' | 'active' | 'on_hold' | 'completed';
+
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  status: ProjectStatus;
+  startDate: string;   // 'YYYY-MM-DD'
+  endDate: string;     // 'YYYY-MM-DD'
+  requiredSkills: string[];
+  teamSize: number;
+  createdAt: string;   // ISO timestamp, set by the backend
+}
+
+// Used when creating a project from the dashboard (id and createdAt come from the backend)
+export type NewProject = Omit<Project, 'id' | 'createdAt'>;
