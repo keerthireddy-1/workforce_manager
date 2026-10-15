@@ -1,0 +1,44 @@
+[
+  {
+    "id": "875c55fa-02a0-4f7d-8530-ffbf1e788f9d",
+    "name": "Attendance Analytics",
+    "description": "Dashboards for attendance and workload trends.",
+    "status": "planning",
+    "startDate": "2026-11-01",
+    "endDate": "2027-01-31",
+    "requiredSkills": [
+      "Python",
+      "Data Analysis"
+    ],
+    "teamSize": 3,
+    "createdAt": "2026-10-15T12:10:19.336798+00:00"
+  },
+  {
+    "id": "f7f91da0-9558-4948-b8f6-b948a7119b2a",
+    "name": "Skills & Upskilling Program",
+    "description": "Track employee skills and training gaps.",
+    "status": "active",
+    "startDate": "2026-08-15",
+    "endDate": "2027-02-28",
+    "requiredSkills": [
+      "Training",
+      "Analytics"
+    ],
+    "teamSize": 4,
+    "createdAt": "2026-10-15T11:53:30.820035+00:00"
+  },
+  {
+    "id": "adcc8a49-e902-408a-abbd-22f9c9d39aff",
+    "name": "ShiftMaster Roster Rollout",
+    "description": "Weekly shift roster planning and auto-fill for operations.",
+    "status": "active",
+    "startDate": "2026-09-01",
+    "endDate": "2026-12-31",
+    "requiredSkills": [
+      "Scheduling",
+      "Operations"
+    ],
+    "teamSize": 6,
+    "createdAt": "2026-10-15T11:52:57.894066+00:00"
+  }
+]

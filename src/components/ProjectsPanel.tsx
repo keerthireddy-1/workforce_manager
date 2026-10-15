@@ -30,8 +30,9 @@ export default function ProjectsPanel() {
       setLoading(true);
       setProjects(await fetchProjects());
       setError('');
-    } catch {
-      setError('Could not load projects. Is the backend running on port 5000?');
+    } catch (e) {
+      console.error(e);
+      setError('Could not load projects: ' + String(e));
     } finally {
       setLoading(false);
     }
@@ -49,8 +50,9 @@ export default function ProjectsPanel() {
     if (m === 'existing') {
       try {
         setExisting(await fetchExistingProjects());
-      } catch {
-        setError('Could not load existing projects.');
+      } catch (e) {
+        console.error(e);
+        setError('Could not load existing projects: ' + String(e));
       }
     }
   }
@@ -62,8 +64,9 @@ export default function ProjectsPanel() {
       setProjects((prev) => [created, ...prev]);
       setExisting((prev) => prev.filter((x) => x.name !== p.name));
       setError('');
-    } catch {
-      setError('Failed to add project.');
+    } catch (e) {
+      console.error(e);
+      setError('Failed to add project: ' + String(e));
     } finally {
       setSaving(false);
     }
@@ -89,8 +92,9 @@ export default function ProjectsPanel() {
       setProjects((prev) => [created, ...prev]);
       setOpen(false);
       setError('');
-    } catch {
-      setError('Failed to save project.');
+    } catch (e) {
+      console.error(e);
+      setError('Failed to save project: ' + String(e));
     } finally {
       setSaving(false);
     }
@@ -149,7 +153,7 @@ export default function ProjectsPanel() {
 
             {mode === 'existing' ? (
               <>
-                {existing.length === 0 && (
+                {existing.length === 0 && !error && (
                   <p className="text-sm text-gray-500">No more existing projects to add.</p>
                 )}
                 {existing.map((p) => (
